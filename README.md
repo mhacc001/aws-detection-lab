@@ -52,18 +52,24 @@ Rule definitions as deployed: [`evidence/03-metric-filters.json`](evidence/03-me
 
 ### 1. Infrastructure built
 
-Terraform stood up 24 resources.
+Terraform planned 24 resources:
 
-![Terraform plan](evidence/01-terraform-plan.png)
+![Terraform plan](<evidence/Screen Shot 2026-08-26 at 10.53.00 PM.png>)
 
-![Terraform apply complete](evidence/02-terraform-apply.png)
+...and applied them:
+
+![Terraform apply complete](<evidence/Screen Shot 2026-08-26 at 11.04.13 PM.png>)
 
 ### 2. Attack simulation
 
-One script, run as the `detlab-attacker` IAM user, executing five techniques in
-sequence.
+Setup: mint an access key for the `detlab-attacker` IAM user (this call alone
+fires detection 5):
 
-![Attack simulation output](evidence/03-attack-simulation.png)
+![Attacker setup](<evidence/Screen Shot 2026-08-26 at 11.06.08 PM.png>)
+
+Then one script executing five techniques in sequence:
+
+![Attack simulation output](<evidence/Screen Shot 2026-08-26 at 11.08.45 PM.png>)
 
 | Scenario | Technique | Result |
 |---|---|---|
