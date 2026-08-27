@@ -87,8 +87,15 @@ terraform destroy
 
 Also disable GuardDuty in the console if you enabled the trial manually.
 
+## Run log
+
+First full run: 2026-08-27. All 5 techniques executed, 4 detected, 1 blocked by
+account-level S3 Block Public Access. One detection (root usage) produced a
+traced false positive from console background polling, with a tuned rule drafted.
+GuardDuty surfaced a separate high-severity instance-credential-exfiltration
+finding. Full write-up in [`FINDINGS.md`](FINDINGS.md).
+
 ## Notes on honesty
 
 This repo is a lab you run, not a claim of production experience. The value is in
-`FINDINGS.md`: your own triage notes on detections you built and then set off on
-purpose. Keep it accurate.
+`FINDINGS.md`: real triage notes on detections built and then set off on purpose.

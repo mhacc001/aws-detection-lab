@@ -11,7 +11,7 @@ output "sns_topic_arn" {
 }
 
 output "guardduty_detector_id" {
-  value = aws_guardduty_detector.main.id
+  value = data.aws_guardduty_detector.main.id
 }
 
 output "attacker_user" {

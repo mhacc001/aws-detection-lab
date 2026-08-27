@@ -187,11 +187,9 @@ resource "aws_cloudwatch_metric_alarm" "d" {
 }
 
 # ---------------------------------------------------------------------------
-# GuardDuty
+# GuardDuty - use the detector already enabled on this account
 # ---------------------------------------------------------------------------
-resource "aws_guardduty_detector" "main" {
-  enable = true
-}
+data "aws_guardduty_detector" "main" {}
 
 # ---------------------------------------------------------------------------
 # Attacker principal for simulation (no console, minimal starting perms)
