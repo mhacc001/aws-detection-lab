@@ -1,0 +1,144 @@
+[
+  {
+    "eventTime": "2026-08-27T04:05:16Z",
+    "eventName": "CreateAccessKey",
+    "eventSource": "iam.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/marie-cli",
+    "accessKeyId": "AKIARH3CDQ26FUQDFQ2T",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": {
+      "userName": "detlab-attacker"
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:08:05Z",
+    "eventName": "CreateAccessKey",
+    "eventSource": "iam.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": {
+      "userName": "detlab-attacker"
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:08:10Z",
+    "eventName": "PutUserPolicy",
+    "eventSource": "iam.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": {
+      "userName": "detlab-attacker",
+      "policyName": "escalate",
+      "policyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":\"*\",\"Resource\":\"*\"}]}"
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:08:27Z",
+    "eventName": "StopLogging",
+    "eventSource": "cloudtrail.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": {
+      "name": "detlab-trail"
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:08:16Z",
+    "eventName": "CreateBucket",
+    "eventSource": "s3.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": {
+      "bucketName": "detlab-exfil-1401910064",
+      "Host": "detlab-exfil-1401910064.s3.amazonaws.com"
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:08:18Z",
+    "eventName": "PutBucketPolicy",
+    "eventSource": "s3.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": "AccessDenied",
+    "requestParameters": {
+      "bucketPolicy": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Sid": "public",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::detlab-exfil-1401910064/*"
+          }
+        ]
+      },
+      "bucketName": "detlab-exfil-1401910064",
+      "Host": "detlab-exfil-1401910064.s3.amazonaws.com",
+      "policy": ""
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:08:17Z",
+    "eventName": "PutBucketPublicAccessBlock",
+    "eventSource": "s3.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": "AccessDenied",
+    "requestParameters": {
+      "publicAccessBlock": "",
+      "bucketName": "detlab-exfil-1401910064",
+      "PublicAccessBlockConfiguration": {
+        "xmlns": "http://s3.amazonaws.com/doc/2006-03-01/",
+        "RestrictPublicBuckets": false,
+        "BlockPublicPolicy": false,
+        "BlockPublicAcls": false,
+        "IgnorePublicAcls": false
+      },
+      "Host": "detlab-exfil-1401910064.s3.amazonaws.com"
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:07:55Z",
+    "eventName": "ListUsers",
+    "eventSource": "iam.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": null
+  },
+  {
+    "eventTime": "2026-08-27T04:07:59Z",
+    "eventName": "GetAccountAuthorizationDetails",
+    "eventSource": "iam.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": {
+      "marker": "AAD7YYp8nrtwvKYgNg7Tjd+G3RchEbJQNol1NmAJOk4IeFBgNNpvYb9/0BAlI/DR369s6PrdrSwLzuQInFS/Fc+kR3Gsv2u5qV5sbLjtapfSASAujCIAKQeUEqNi/5fajzg=="
+    }
+  },
+  {
+    "eventTime": "2026-08-27T04:07:58Z",
+    "eventName": "GetAccountAuthorizationDetails",
+    "eventSource": "iam.amazonaws.com",
+    "principal": "arn:aws:iam::085568227004:user/detlab-attacker",
+    "accessKeyId": "AKIARH3CDQ26KBS7WMMG",
+    "sourceIP": "99.88.49.167",
+    "errorCode": null,
+    "requestParameters": null
+  }
+]

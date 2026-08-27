@@ -1,0 +1,132 @@
+[
+    {
+        "time": 1787802809.107,
+        "alarm": "detlab-cloudtrail_tampering",
+        "change": "Alarm updated from INSUFFICIENT_DATA to OK"
+    },
+    {
+        "time": 1787802836.917,
+        "alarm": "detlab-access_key_created",
+        "change": "Alarm updated from INSUFFICIENT_DATA to OK"
+    },
+    {
+        "time": 1787802851.835,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from INSUFFICIENT_DATA to OK"
+    },
+    {
+        "time": 1787802858.691,
+        "alarm": "detlab-s3_public_access",
+        "change": "Alarm updated from INSUFFICIENT_DATA to OK"
+    },
+    {
+        "time": 1787802863.465,
+        "alarm": "detlab-iam_policy_change",
+        "change": "Alarm updated from INSUFFICIENT_DATA to OK"
+    },
+    {
+        "time": 1787802866.755,
+        "alarm": "detlab-console_login_no_mfa",
+        "change": "Alarm updated from INSUFFICIENT_DATA to OK"
+    },
+    {
+        "time": 1787803091.832,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803151.833,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803571.831,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803631.831,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803736.914,
+        "alarm": "detlab-access_key_created",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803796.913,
+        "alarm": "detlab-access_key_created",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803871.83,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803878.689,
+        "alarm": "detlab-s3_public_access",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803883.461,
+        "alarm": "detlab-iam_policy_change",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803889.106,
+        "alarm": "detlab-cloudtrail_tampering",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803916.912,
+        "alarm": "detlab-access_key_created",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787803931.833,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803938.69,
+        "alarm": "detlab-s3_public_access",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803943.524,
+        "alarm": "detlab-iam_policy_change",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803949.106,
+        "alarm": "detlab-cloudtrail_tampering",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787803976.913,
+        "alarm": "detlab-access_key_created",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787804171.83,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787804651.832,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from ALARM to OK"
+    },
+    {
+        "time": 1787804831.832,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from OK to ALARM"
+    },
+    {
+        "time": 1787805131.832,
+        "alarm": "detlab-root_account_used",
+        "change": "Alarm updated from ALARM to OK"
+    }
+]

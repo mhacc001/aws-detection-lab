@@ -1,0 +1,26 @@
+[
+    {
+        "type": "Policy:IAMUser/RootCredentialUsage",
+        "severity": 2.0,
+        "title": "The API DescribeRegions was invoked using root credentials.",
+        "count": 3623,
+        "firstSeen": "2026-08-15T16:26:58.000Z",
+        "lastSeen": "2026-08-27T04:26:10.000Z"
+    },
+    {
+        "type": "Stealth:IAMUser/CloudTrailLoggingDisabled",
+        "severity": 2.0,
+        "title": "An AWS CloudTrail trail arn:aws:cloudtrail:us-east-1:085568227004:trail/management-events was disabled.",
+        "count": 1,
+        "firstSeen": "2026-08-16T21:14:04.000Z",
+        "lastSeen": "2026-08-16T21:14:04.000Z"
+    },
+    {
+        "type": "UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.InsideAWS",
+        "severity": 8.0,
+        "title": "Credentials for the EC2 instance role NextWork-GuardDuty-project-mariehaccandy-TheRole-4qVMZtu585zP were used from a remote AWS account.",
+        "count": 1,
+        "firstSeen": "2026-08-15T17:15:25.000Z",
+        "lastSeen": "2026-08-15T17:15:25.000Z"
+    }
+]

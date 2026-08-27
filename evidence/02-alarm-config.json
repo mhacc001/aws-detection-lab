@@ -1,0 +1,38 @@
+[
+    {
+        "name": "detlab-access_key_created",
+        "desc": "New access key created - T1098.001",
+        "metric": "detlab-access_key_created",
+        "namespace": "DetectionLab"
+    },
+    {
+        "name": "detlab-cloudtrail_tampering",
+        "desc": "CloudTrail disabled or altered - T1562.008",
+        "metric": "detlab-cloudtrail_tampering",
+        "namespace": "DetectionLab"
+    },
+    {
+        "name": "detlab-console_login_no_mfa",
+        "desc": "Console sign-in without MFA - T1078.004",
+        "metric": "detlab-console_login_no_mfa",
+        "namespace": "DetectionLab"
+    },
+    {
+        "name": "detlab-iam_policy_change",
+        "desc": "IAM policy modification - T1098",
+        "metric": "detlab-iam_policy_change",
+        "namespace": "DetectionLab"
+    },
+    {
+        "name": "detlab-root_account_used",
+        "desc": "Root account activity - T1078.004",
+        "metric": "detlab-root_account_used",
+        "namespace": "DetectionLab"
+    },
+    {
+        "name": "detlab-s3_public_access",
+        "desc": "S3 bucket access policy change - T1530 / T1567.002",
+        "metric": "detlab-s3_public_access",
+        "namespace": "DetectionLab"
+    }
+]

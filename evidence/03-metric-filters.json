@@ -1,0 +1,26 @@
+[
+    {
+        "name": "detlab-access_key_created",
+        "pattern": "{ ($.eventName = \"CreateAccessKey\") }"
+    },
+    {
+        "name": "detlab-cloudtrail_tampering",
+        "pattern": "{ ($.eventName = \"StopLogging\") || ($.eventName = \"DeleteTrail\") || ($.eventName = \"UpdateTrail\") }"
+    },
+    {
+        "name": "detlab-console_login_no_mfa",
+        "pattern": "{ ($.eventName = \"ConsoleLogin\") && ($.additionalEventData.MFAUsed != \"Yes\") && ($.responseElements.ConsoleLogin = \"Success\") }"
+    },
+    {
+        "name": "detlab-iam_policy_change",
+        "pattern": "{ ($.eventName = \"PutUserPolicy\") || ($.eventName = \"PutRolePolicy\") || ($.eventName = \"AttachUserPolicy\") || ($.eventName = \"AttachRolePolicy\") || ($.eventName = \"CreatePolicyVersion\") }"
+    },
+    {
+        "name": "detlab-root_account_used",
+        "pattern": "{ $.userIdentity.type = \"Root\" && $.userIdentity.invokedBy NOT EXISTS && $.eventType != \"AwsServiceEvent\" }"
+    },
+    {
+        "name": "detlab-s3_public_access",
+        "pattern": "{ ($.eventName = \"PutBucketPolicy\") || ($.eventName = \"PutBucketAcl\") || ($.eventName = \"DeletePublicAccessBlock\") || ($.eventName = \"PutBucketPublicAccessBlock\") }"
+    }
+]
